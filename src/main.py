@@ -5,4 +5,8 @@ tasks = ["Buy groceries", "Finish project", "Call mom", "Send email", "Clean roo
 
 print("\nAll Tasks:")
 display_tasks(tasks)
-
+print("\nFiltering tasks")
+filter_tasks(tasks, "project")
+print(f"\nGenerator expression")
+project_tasks = task_generator(tasks, "project")
+print(next(project_tasks))
